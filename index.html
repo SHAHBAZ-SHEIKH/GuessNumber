@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+        <div class="upperSection">
+            <button onclick="againHandler()">Again</button>
+            <p>Between 1 to 20</p>
+        </div>
+
+        <div class="guessnumber">
+            <h2>Guess Number</h2>
+            
+        </div>
+
+        <div class="line">
+            <div class="questionMark">
+                <p><span id="questionMark">?</span></p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="inputValue">
+                <input type="number" onkeyup="keyHandler()" id="inputValue">
+                <button onclick="checkHandler()">Check</button>
+                
+            </div>
+            <div class="score">
+                <p id="victory">Guess Number ....</p>
+                <p >Score: <span id="score">20</span></p>
+                <p >High Score: <span id="highScore">0</span></p>
+            </div>
+
+        </div>
+
+        
+
+        
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
